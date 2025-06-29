@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cookie-banner {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 90%;
+    display: flex;
+    gap: 15px;
+}
+
+.cookie-icon {
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+}
+
+.cookie-content {
+    flex: 1;
+}
+
+.cookie-banner h3 {
+    margin: 0 0 10px 0;
+    color: #333;
+    font-size: 18px;
+}
+
+.cookie-banner p {
+    margin: 0 0 20px 0;
+    color: #333;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.cookie-banner a {
+    color: #000000;
+    text-decoration: underline;
+    font-weight: normal;
+}
+
+.cookie-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.cookie-btn {
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold; /* Testo in grassetto */
+    transition: all 0.3s ease;
+}
+
+.cookie-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reject-btn {
+    background-color: white;
+    color: #333;
+}
+
+.customize-btn {
+    background-color: white;
+    color: #333;
+}
+
+.accept-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+}
+
+.accept-btn:hover {
+    background-color: #45a049;
+}
+
+.lyro-ai {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+    font-style: italic;
+}

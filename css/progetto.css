@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: white;
+    padding: 15px 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+}
+
+#tidio-chat {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+
+/* pulsante chat nel menu */
+.sidebar-category.chat-btn {
+    background-color: #27ae60;
+    color: white;
+    padding: 12px;
+    border-radius: 4px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.sidebar-category.chat-btn:hover {
+    background-color: #2ecc71;
+}
+
+.contact-info {
+    display: flex;
+    gap: 20px;
+    color: #2c3e50;
+    font-size: 14px;
+    margin-left: 50px;
+}
+
+.contact-info span {
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.contact-info span:hover {
+    color: #a0a0a0;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    border: none;
+}
+
+.login-btn {
+    background-color: #27ae60;
+    color: white;
+}
+
+.login-btn:hover {
+    background-color: #2ecc71;
+}
+
+.signup-btn {
+    background-color: #3498db;
+    color: white;
+}
+
+.signup-btn:hover {
+    background-color: #2980b9;
+}
+
+.project-container {
+    max-width: 1000px;
+    margin: 80px auto 40px;
+    padding: 0 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.project-header {
+    text-align: center;
+    padding: 40px 0 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.project-header h1 {
+    color: #27ae60;
+    margin-bottom: 15px;
+}
+
+.project-content {
+    padding: 30px 0;
+    line-height: 1.8;
+    color: #333;
+}
+
+.project-content h2 {
+    color: #2c3e50;
+    margin: 30px 0 15px;
+    border-left: 4px solid #27ae60;
+    padding-left: 10px;
+}
+
+.project-content p {
+    margin-bottom: 20px;
+}
+
+.team-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.team-member {
+    flex: 1;
+    min-width: 250px;
+    background: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .project-container {
+        margin-top: 60px;
+    }
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;
+    position: relative;
+    z-index: 100;
+}
