@@ -57,7 +57,7 @@ try {
         case 'carta':
         
         	//CHIAVE PRIVATA
-            \Stripe\Stripe::setApiKey('sk_test_51RZWEjQ9GakdebfOjVHjBfcBuCeo10cHlRSLBbqFI12c3yuqPDH9oBiaa9XwP4S9fmTTOgFIIOZcvj59PgpwOhJX00mk4GrM5m');
+            \Stripe\Stripe::setApiKey('');
 
             $intent = \Stripe\PaymentIntent::create([
                 'amount' => ($totale * 100),
